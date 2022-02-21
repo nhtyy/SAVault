@@ -5,6 +5,8 @@ import "./tokens/ERC721.sol";
 import "./tokens/ERC20.sol";
 import "./interfaces/IStrategy.sol";
 
+// 1e4 is for basis points calculation
+// 1e10 is scalar
 
 contract BaseVault is ERC721 {
 

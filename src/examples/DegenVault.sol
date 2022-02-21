@@ -157,7 +157,7 @@ contract DegenVault is BaseVault {
     // adjustYeild() manages startegy yeild
     function adjustYeild(uint256 amount) internal {
 
-        yeildPerDeposit += amount * SCALAR / totalDeposits;
+        yeildPerDeposit += amount * 1e10 / totalDeposits;
 
     }
 

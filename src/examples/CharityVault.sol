@@ -81,7 +81,7 @@ contract CharityVault is BaseVault {
         uint256 toCharitable = totalYield * ctx.percentOfYield / 1e4;
 
         yieldForRecipient += toCharitable;
-        yeildPerDeposit += ((totalYield - toCharitable) * SCALAR) / totalDeposits;
+        yeildPerDeposit += ((totalYield - toCharitable) * 1e10) / totalDeposits;
 
     }
     
