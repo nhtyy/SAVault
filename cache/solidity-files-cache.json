@@ -1,0 +1,872 @@
+{
+  "_format": "ethers-rs-sol-cache-2",
+  "files": {
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1645229562516,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {
+        "DSTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/BaseVault.sol": {
+      "lastModificationDate": 1645341871454,
+      "contentHash": "8275c97b3aba55a2139f5166e8332417",
+      "sourceName": "src/BaseVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BasicMetaTransaction.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/BasicMetaTransaction.sol": {
+      "lastModificationDate": 1645341871454,
+      "contentHash": "802b93c2ff452ea89eff19937ac1c458",
+      "sourceName": "src/BasicMetaTransaction.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/CharityVault.sol": {
+      "lastModificationDate": 1645336082374,
+      "contentHash": "c2b9c144624d6cfb3ad5695c612173a8",
+      "sourceName": "src/CharityVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/DaoVault.sol": {
+      "lastModificationDate": 1645336082374,
+      "contentHash": "c6cba68d5b2ba189e9b737d24e220572",
+      "sourceName": "src/DaoVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/DegenVault.sol": {
+      "lastModificationDate": 1645336082375,
+      "contentHash": "45872057804709e35e490d33582d06c4",
+      "sourceName": "src/DegenVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/NFTDataGenerator.sol": {
+      "lastModificationDate": 1645336082375,
+      "contentHash": "9fe1ce97ede4db9ce343afee023bee51",
+      "sourceName": "src/NFTDataGenerator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/SuperFluidVault.sol": {
+      "lastModificationDate": 1645336082375,
+      "contentHash": "0944e7e31eafbdf3062dfc138b90e227",
+      "sourceName": "src/SuperFluidVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/CharityVault.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/VaultFactory.sol": {
+      "lastModificationDate": 1645322278539,
+      "contentHash": "c6229b131f50e6cf32242bff35faf041",
+      "sourceName": "src/VaultFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/interfaces/IStrategy.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "VaultFactory": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/VaultFactory.json"
+        },
+        "iVault": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/iVault.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/controllers/DAOMultisig.sol": {
+      "lastModificationDate": 1645336082376,
+      "contentHash": "43236e56014e8a5b9c0d6d0ad5404b91",
+      "sourceName": "src/controllers/DAOMultisig.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/DaoVault.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/controllers/PDelegateDAOController.sol": {
+      "lastModificationDate": 1645336082377,
+      "contentHash": "c670c1ba207342e317752923bbf1fdb0",
+      "sourceName": "src/controllers/PDelegateDAOController.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/DaoVault.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/interfaces/IAavePool.sol": {
+      "lastModificationDate": 1645328554869,
+      "contentHash": "37a4e21170834730623ff3f976fa9360",
+      "sourceName": "src/interfaces/IAavePool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IPool": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IAavePool.sol/IPool.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/interfaces/INftDataGenerator.sol": {
+      "lastModificationDate": 1645336082378,
+      "contentHash": "89bbd90ec8dc89c108ae1c242f1944ee",
+      "sourceName": "src/interfaces/INftDataGenerator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/interfaces/IStrategy.sol": {
+      "lastModificationDate": 1645228873233,
+      "contentHash": "3d597ec8b9bbc0060ff71dba6b286759",
+      "sourceName": "src/interfaces/IStrategy.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "IStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IStrategy.sol/IStrategy.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/interfaces/yearnVault.sol": {
+      "lastModificationDate": 1644786952357,
+      "contentHash": "f9e5eba0fe8908cab08513cafb4f1e13",
+      "sourceName": "src/interfaces/yearnVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "yVault": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "yearnVault.sol/yVault.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/strategies/ExampleAaveStrat.sol": {
+      "lastModificationDate": 1645330495973,
+      "contentHash": "6381e13f226b6e83dca4f0f7a4f17e0c",
+      "sourceName": "src/strategies/ExampleAaveStrat.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/interfaces/IAavePool.sol",
+        "src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "AaveStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleAaveStrat.sol/AaveStrategy.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/strategies/ExampleElementStart.sol": {
+      "lastModificationDate": 1645336082379,
+      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "sourceName": "src/strategies/ExampleElementStart.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/strategies/ExampleTrueStrat.sol": {
+      "lastModificationDate": 1645336082379,
+      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "sourceName": "src/strategies/ExampleTrueStrat.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/strategies/ExampleYearnStrat.sol": {
+      "lastModificationDate": 1645251763332,
+      "contentHash": "d248603762497c9b3aa371f1817f57e5",
+      "sourceName": "src/strategies/ExampleYearnStrat.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/interfaces/yearnVault.sol",
+        "src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "YearnStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleYearnStrat.sol/YearnStrategy.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/test/Console.sol": {
+      "lastModificationDate": 1645270631086,
+      "contentHash": "342456e549977076f26435e4fb0f3eb8",
+      "sourceName": "src/test/Console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "console": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Console.sol/console.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/test/Contract.t.sol": {
+      "lastModificationDate": 1645336087580,
+      "contentHash": "7b33b365ef49d53cda41b0618a876914",
+      "sourceName": "src/test/Contract.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "src/BaseVault.sol",
+        "src/BasicMetaTransaction.sol",
+        "src/CharityVault.sol",
+        "src/interfaces/IStrategy.sol",
+        "src/test/Console.sol",
+        "src/tokens/ERC20.sol",
+        "src/tokens/ERC721.sol",
+        "src/tokens/MockERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1644629099498,
+      "contentHash": "a1c858988878a39d105e878d399170d3",
+      "sourceName": "src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1645323826127,
+      "contentHash": "9df8f42e32dc544506aadeaf9d466b43",
+      "sourceName": "src/tokens/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC721.sol/ERC721.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/tokens/MockERC20.sol": {
+      "lastModificationDate": 1645252920624,
+      "contentHash": "f543318d3269f33dc408e112692f206e",
+      "sourceName": "src/tokens/MockERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "MockERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+        }
+      }
+    },
+    "/Users/nathanbustamante/Desktop/Vaultsv2/contracts/src/tokens/MockYearnVault.sol": {
+      "lastModificationDate": 1645229164430,
+      "contentHash": "e9757daf1912800428f8fc74e764418e",
+      "sourceName": "src/tokens/MockYearnVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/interfaces/yearnVault.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "MockYearnVault": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MockYearnVault.sol/MockYearnVault.json"
+        }
+      }
+    }
+  }
+}
