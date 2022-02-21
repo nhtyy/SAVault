@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "./BaseVault.sol";
+import "../BaseVault.sol";
 
 //ENSURE vault tokens revert on failed transfer
 contract DaoVault is BaseVault {

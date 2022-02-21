@@ -7,8 +7,6 @@ interface iVault {
     function setStrat(address addr) external;
 }
 
-
-// creates vaults and returns address of controller / vault nft and the vault
 contract VaultFactory {
 
     address[] public vaults;

@@ -1,12 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "./tokens/ERC20.sol";
-import "./BaseVault.sol";
+import "../BaseVault.sol";
 
-// Jackpot & Dividend Vault
-// This is the vault that the Jackpot and Degen dividends go.
-// Balances for jackpot vs dividends are tracked with internal vars
 contract DegenVault is BaseVault {
 
     // #########################
@@ -122,16 +118,15 @@ contract DegenVault is BaseVault {
         Context memory ctxm = ctx;
 
         // sorry :( , you dont get your own dividends?!
-        adjustYeild(
-            amount * ctxm.dividendsBP / 10000
-        );
-
+        adjustYeild(amount * ctxm.dividendsBP / 10000);
+        
         jackpot += amount * ctxm.jackpotBP / 10000;
 
         uint256 totalBP = 10000 - (ctxm.jackpotBP + ctxm.dividendsBP);
         uint256 newAmount = amount * totalBP / 10000;
         
         adjustFactors();
+
         _depositToId(newAmount, id);
 
     }
@@ -167,6 +162,7 @@ contract DegenVault is BaseVault {
     }
 
     // possible improvemnt is to send unclaimed depostis into the jackpot
+    // currently is distributed to all holders
 
     // #########################
     // ##                     ##

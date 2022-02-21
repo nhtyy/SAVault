@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "./BaseVault.sol";
+import "../BaseVault.sol";
 
 // No Loss Charity Vaults are immutable and recipients cannot changed, 
 contract CharityVault is BaseVault {
@@ -69,7 +69,8 @@ contract CharityVault is BaseVault {
 
     function distributeYeild() public override {
 
-        uint256 unclaimedYield = vaultToken.balanceOf(address(this)) - lastKnownContractBalance;
+        uint256 unclaimedYield = 
+            vaultToken.balanceOf(address(this)) - lastKnownContractBalance;
         lastKnownContractBalance += unclaimedYield;
 
          uint256 strategyYield = address(strat) != address(0) ? 
@@ -77,13 +78,10 @@ contract CharityVault is BaseVault {
         lastKnownStrategyTotal += strategyYield;
 
         uint256 totalYield = unclaimedYield + strategyYield;
-        
         uint256 toCharitable = totalYield * ctx.percentOfYield / 1e4;
-        uint256 amountToDistrib = totalYield - toCharitable;
 
         yieldForRecipient += toCharitable;
-
-        yeildPerDeposit += (amountToDistrib * SCALAR) / totalDeposits;
+        yeildPerDeposit += ((totalYield - toCharitable) * SCALAR) / totalDeposits;
 
     }
     

@@ -4,10 +4,9 @@ pragma solidity >=0.8.0;
 import "./tokens/ERC721.sol";
 import "./tokens/ERC20.sol";
 import "./interfaces/IStrategy.sol";
-import "./BasicMetaTransaction.sol";
 
 
-contract BaseVault is ERC721, BasicMetaTransaction {
+contract BaseVault is ERC721 {
 
     // #########################
     // ##                     ##
@@ -16,7 +15,7 @@ contract BaseVault is ERC721, BasicMetaTransaction {
     // #########################
 
     struct Deposits {
-        uint256 amount;
+        uint256 amount; 
         uint256 tracker; //sum of delta(deposit) * yeildPerDeposit || SCALED
     }
 
@@ -38,11 +37,11 @@ contract BaseVault is ERC721, BasicMetaTransaction {
     mapping(uint256 => Deposits) public deposits;
 
     //sum of yeild/totalDeposits
-    uint256 public yeildPerDeposit; //SCALED
+    uint256 public yeildPerDeposit; //scaled
     uint256 public totalDeposits;
     uint256 internal SCALAR = 1e10;
 
-    // used internally when calculating 
+    // used when calculating rewards and yield Strategy deposits
     uint256 internal lastKnownContractBalance;
     uint256 internal lastKnownStrategyTotal;
     uint256 internal depositedToStrat;
@@ -114,7 +113,7 @@ contract BaseVault is ERC721, BasicMetaTransaction {
 
     function _mintNewNFT(uint256 amount) internal returns (uint256) {
 
-        uint256 id = _mint(msgSender(), currentId); // Use Biconomy here;
+        uint256 id = _mint(msg.sender, currentId);
 
         if (totalDeposits > 0) {
             distributeYeild();
@@ -127,7 +126,7 @@ contract BaseVault is ERC721, BasicMetaTransaction {
         lastKnownContractBalance += amount;
 
         //ensure token reverts on failed
-        vaultToken.transferFrom(msgSender(), address(this), amount);
+        vaultToken.transferFrom(msg.sender, address(this), amount);
 
         return id;
 
@@ -136,28 +135,30 @@ contract BaseVault is ERC721, BasicMetaTransaction {
     function _depositToId(uint256 amount, uint256 id) internal {
 
         // trusted contract
-        require(msgSender() == ownerOf[id]); // Use Biconomy;
+        require(msg.sender == ownerOf[id]); // Use Biconomy;
 
-        distributeYeild();
+        if (totalDeposits > 0) {
+            distributeYeild();
+        }
 
         deposits[id].amount += amount;
         deposits[id].tracker += amount * yeildPerDeposit;
-
+        
         totalDeposits += amount;
         lastKnownContractBalance += amount;
 
         //ensure token reverts on failed
-        vaultToken.transferFrom(msgSender(), address(this), amount); // Use Biconomy;
+        vaultToken.transferFrom(msg.sender, address(this), amount); // Use Biconomy;
 
     }
 
     function _withdrawFromId(uint256 amount, uint256 id) internal {
 
         require(
-            msgSender() == ownerOf[id] && 
+            msg.sender == ownerOf[id] && 
             amount <= withdrawableById(id)
-        ); // Use Biconomy;
-        
+        ); 
+
         uint256 balanceCheck = vaultToken.balanceOf(address(this));
         uint256 principalWithdrawn;
 
@@ -190,7 +191,7 @@ contract BaseVault is ERC721, BasicMetaTransaction {
 
         }
 
-        vaultToken.transfer(msgSender(), amount); // Use Biconomy;
+        vaultToken.transfer(msg.sender, amount); // Use Biconomy;
     }
 
     // #########################
@@ -216,7 +217,6 @@ contract BaseVault is ERC721, BasicMetaTransaction {
     }
 
     //internal, only called when balanceOf(address(this)) < withdraw requested
-    // depositedToStrat and totalDeposits = total withdrawn - yeild of msg.sender
     function withdrawFromStrat(uint256 amountNeeded) internal {
         strat.withdrawl(amountNeeded);
         lastKnownStrategyTotal -= amountNeeded;
@@ -232,23 +232,23 @@ contract BaseVault is ERC721, BasicMetaTransaction {
     // called before deposits and withdrawls
     function distributeYeild() public virtual {
 
-        uint256 unclaimedYield = vaultToken.balanceOf(address(this)) - lastKnownContractBalance;
+        uint256 unclaimedYield = 
+            vaultToken.balanceOf(address(this)) - lastKnownContractBalance;
         lastKnownContractBalance += unclaimedYield;
         
         uint256 strategyYield = address(strat) != address(0) ? 
             strat.withdrawlableVaultToken() - lastKnownStrategyTotal : 0;
-
         lastKnownStrategyTotal += strategyYield;
 
-        uint256 totalYield = unclaimedYield + strategyYield;
-
-        yeildPerDeposit += (totalYield * SCALAR) / totalDeposits;
+        yeildPerDeposit += ((unclaimedYield + strategyYield) * SCALAR) / totalDeposits;
         
     }
 
     function yieldPerId(uint256 id) public view returns (uint256) {
+
         uint256 pre = (deposits[id].amount * yeildPerDeposit) / SCALAR;
         return pre - (deposits[id].tracker / SCALAR);
+
     }
 
     // #########################
@@ -273,8 +273,12 @@ contract BaseVault is ERC721, BasicMetaTransaction {
 
     function setStrat(address addr) external {
 
-        require ( msg.sender == deployer && address(strat) == address(0) );
+        require ( 
+            msg.sender == deployer && 
+            address(strat) == address(0)
+        );
 
         strat = IStrategy(addr);
+
     }
 }
