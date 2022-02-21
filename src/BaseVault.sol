@@ -39,7 +39,6 @@ contract BaseVault is ERC721 {
     //sum of yeild/totalDeposits
     uint256 public yeildPerDeposit; //scaled
     uint256 public totalDeposits;
-    uint256 internal SCALAR = 1e10;
 
     // used when calculating rewards and yield Strategy deposits
     uint256 internal lastKnownContractBalance;
@@ -135,7 +134,7 @@ contract BaseVault is ERC721 {
     function _depositToId(uint256 amount, uint256 id) internal {
 
         // trusted contract
-        require(msg.sender == ownerOf[id]); // Use Biconomy;
+        require(msg.sender == ownerOf[id]); 
 
         if (totalDeposits > 0) {
             distributeYeild();
@@ -148,7 +147,7 @@ contract BaseVault is ERC721 {
         lastKnownContractBalance += amount;
 
         //ensure token reverts on failed
-        vaultToken.transferFrom(msg.sender, address(this), amount); // Use Biconomy;
+        vaultToken.transferFrom(msg.sender, address(this), amount); 
 
     }
 
@@ -179,7 +178,7 @@ contract BaseVault is ERC721 {
             
             // user yield still remains therefore principal not affected
             // just add nonclaimable to current tracker
-            deposits[id].tracker += amount * SCALAR;
+            deposits[id].tracker += amount * 1e10;
     
         }
         
@@ -191,7 +190,7 @@ contract BaseVault is ERC721 {
 
         }
 
-        vaultToken.transfer(msg.sender, amount); // Use Biconomy;
+        vaultToken.transfer(msg.sender, amount); 
     }
 
     // #########################
@@ -240,14 +239,14 @@ contract BaseVault is ERC721 {
             strat.withdrawlableVaultToken() - lastKnownStrategyTotal : 0;
         lastKnownStrategyTotal += strategyYield;
 
-        yeildPerDeposit += ((unclaimedYield + strategyYield) * SCALAR) / totalDeposits;
+        yeildPerDeposit += ((unclaimedYield + strategyYield) * 1e10) / totalDeposits;
         
     }
 
     function yieldPerId(uint256 id) public view returns (uint256) {
 
-        uint256 pre = (deposits[id].amount * yeildPerDeposit) / SCALAR;
-        return pre - (deposits[id].tracker / SCALAR);
+        uint256 pre = (deposits[id].amount * yeildPerDeposit) / 1e10;
+        return pre - (deposits[id].tracker / 1e10);
 
     }
 
