@@ -5,16 +5,16 @@ import "./tokens/ERC721.sol";
 import "./tokens/ERC20.sol";
 import "./interfaces/IStrategy.sol";
 
-// 1e4 is for basis points calculation
-// 1e10 is scalar
-
+///======================================================================================================================================
+// Vaults are designed to be human readeable and as minimal as possible
+// 
+// 1e4 = basis points calculation && 1e10 = floating point scalar
+///======================================================================================================================================
 contract BaseVault is ERC721 {
 
-    // #########################
-    // ##                     ##
-    // ##      Structs        ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Data Struct
+///======================================================================================================================================
 
     struct Deposits {
         uint256 amount; 
@@ -29,17 +29,15 @@ contract BaseVault is ERC721 {
         uint256 vaultType;
     }
 
-    // #########################
-    // ##                     ##
-    // ##       State         ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// State Variables
+///======================================================================================================================================
 
     // tokenID => Deposits
     mapping(uint256 => Deposits) public deposits;
 
-    //sum of yeild/totalDeposits
-    uint256 public yeildPerDeposit; //scaled
+    //sum of yeild/totalDeposits scaled by 1e10
+    uint256 public yeildPerDeposit;
     uint256 public totalDeposits;
 
     // used when calculating rewards and yield Strategy deposits
@@ -51,11 +49,9 @@ contract BaseVault is ERC721 {
     address immutable deployer; // can only set the strat ONCE
     IStrategy strat;
 
-    // #########################
-    // ##                     ##
-    // ##     Constructor     ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Constructor
+///======================================================================================================================================
 
     constructor(
         address _vaultToken,
@@ -68,11 +64,12 @@ contract BaseVault is ERC721 {
         deployer = msg.sender;
     }
 
-    // #########################
-    // ##                     ##
-    // ##     User Facing     ##
-    // ##                     ##
-    // #########################
+
+///======================================================================================================================================
+/// Overrideable Public Functions
+///
+/// Individual use case logic can done here 
+///======================================================================================================================================
 
     function mintNewNft(uint256 amount) public virtual returns (uint256) {
         return _mintNewNFT(amount);
@@ -87,30 +84,30 @@ contract BaseVault is ERC721 {
     }
 
     function burnNFTAndWithdrawl(uint256 id) public virtual {
+
         uint256 claimable = withdrawableById(id);
         _withdrawFromId(claimable, id);
 
         // erc721
         _burn(id);
+
     }
 
     function withdrawableById(uint256 id)
-        public 
-        view
-        virtual 
-        returns (uint256 claimId)
+        public view
+        virtual returns (uint256 claimId) 
     {
 
         return deposits[id].amount + yieldPerId(id);
 
     }
 
-    // #########################
-    // ##                     ##
-    // ##  Internal Deposits  ##
-    // ##       Logic         ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Internal Logic
+///
+/// distributeYield() must always be done before
+/// deposits to get accurate yield calculations
+///======================================================================================================================================
 
     function _mintNewNFT(uint256 amount) internal returns (uint256) {
 
@@ -155,6 +152,9 @@ contract BaseVault is ERC721 {
 
     function _withdrawFromId(uint256 amount, uint256 id) internal {
 
+        // Alaways distribute yield 
+        distributeYeild();
+
         require(
             msg.sender == ownerOf[id] && 
             amount <= withdrawableById(id)
@@ -162,8 +162,6 @@ contract BaseVault is ERC721 {
 
         uint256 balanceCheck = vaultToken.balanceOf(address(this));
         uint256 principalWithdrawn;
-
-        distributeYeild();
         uint256 userYield = yieldPerId(id);
 
         if (amount > userYield) {
@@ -195,14 +193,13 @@ contract BaseVault is ERC721 {
         vaultToken.transfer(msg.sender, amount); 
     }
 
-    // #########################
-    // ##                     ##
-    // ##      Strategy       ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Strategy
+///======================================================================================================================================
 
     //total possible deposited to strat is currently set at 50%
     function initStrat() public {
+
         require(address(strat) != address(0), "No Strategy");
 
         // 50% of total deposits
@@ -215,19 +212,20 @@ contract BaseVault is ERC721 {
 
         vaultToken.approve(address(strat), depositable);
         strat.deposit(depositable);
+
     }
 
     //internal, only called when balanceOf(address(this)) < withdraw requested
     function withdrawFromStrat(uint256 amountNeeded) internal {
+
         strat.withdrawl(amountNeeded);
         lastKnownStrategyTotal -= amountNeeded;
+        
     }
 
-    // #########################
-    // ##                     ##
-    // ##       Yeild         ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Yield
+///======================================================================================================================================
 
     // gets yeild from strategy contract
     // called before deposits and withdrawls
@@ -247,16 +245,15 @@ contract BaseVault is ERC721 {
 
     function yieldPerId(uint256 id) public view returns (uint256) {
 
+        
         uint256 pre = (deposits[id].amount * yeildPerDeposit) / 1e10;
         return pre - (deposits[id].tracker / 1e10);
 
     }
 
-    // #########################
-    // ##                     ##
-    // ##  MetaData Override  ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Token metadata
+///======================================================================================================================================
 
     function tokenURI(uint256 id) 
         public view virtual
@@ -266,11 +263,11 @@ contract BaseVault is ERC721 {
 
     }
 
-    // #########################
-    // ##                     ##
-    // ##       INIT          ##
-    // ##                     ##
-    // #########################
+///======================================================================================================================================
+/// Used after deployment
+///
+/// Likely to be removed in upcoming versions
+///======================================================================================================================================
 
     function setStrat(address addr) external {
 

@@ -1,8 +1,8 @@
 {
   "_format": "ethers-rs-sol-cache-2",
   "files": {
-    "/Users/nathanbustamante/Desktop/SAVaults/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1645376489138,
+    "/home/nutty/Desktop/Community/SAVault/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1645599186042,
       "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
       "sourceName": "lib/ds-test/src/test.sol",
       "solcConfig": {
@@ -31,13 +31,13 @@
       "versionRequirement": ">=0.4.23",
       "artifacts": {
         "DSTest": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "test.sol/DSTest.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "test.sol/DSTest.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/BaseVault.sol": {
-      "lastModificationDate": 1645423825541,
-      "contentHash": "c16e7ca10940fdc7988cc9db2259eae8",
+    "/home/nutty/Desktop/Community/SAVault/src/BaseVault.sol": {
+      "lastModificationDate": 1645599939043,
+      "contentHash": "eb45dbfee45b0b450d602e4c06e20bf4",
       "sourceName": "src/BaseVault.sol",
       "solcConfig": {
         "settings": {
@@ -69,13 +69,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "BaseVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "BaseVault.sol/BaseVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "BaseVault.sol/BaseVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/VaultFactory.sol": {
-      "lastModificationDate": 1645376489141,
-      "contentHash": "c6229b131f50e6cf32242bff35faf041",
+    "/home/nutty/Desktop/Community/SAVault/src/VaultFactory.sol": {
+      "lastModificationDate": 1645599186046,
+      "contentHash": "25ba531246994ef0793d07447467486b",
       "sourceName": "src/VaultFactory.sol",
       "solcConfig": {
         "settings": {
@@ -105,15 +105,15 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "VaultFactory": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/VaultFactory.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "VaultFactory.sol/VaultFactory.json"
         },
         "iVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/iVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "VaultFactory.sol/iVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/controllers/DAOMultisig.sol": {
-      "lastModificationDate": 1645423373570,
+    "/home/nutty/Desktop/Community/SAVault/src/controllers/DAOMultisig.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "caa885f0cb9b79b3ea5c5363b01abeae",
       "sourceName": "src/controllers/DAOMultisig.sol",
       "solcConfig": {
@@ -148,12 +148,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "DAOMultsig": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "DAOMultisig.sol/DAOMultsig.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "DAOMultisig.sol/DAOMultsig.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/controllers/PDelegateDAOController.sol": {
-      "lastModificationDate": 1645423378814,
+    "/home/nutty/Desktop/Community/SAVault/src/controllers/PDelegateDAOController.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "36c099a11129eb6c6ee5459e6a2208b6",
       "sourceName": "src/controllers/PDelegateDAOController.sol",
       "solcConfig": {
@@ -188,13 +188,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "PDelegate": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "PDelegateDAOController.sol/PDelegate.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "PDelegateDAOController.sol/PDelegate.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/examples/CharityVault.sol": {
-      "lastModificationDate": 1645423400671,
-      "contentHash": "b345431683c51422eb0a8a7a766080e3",
+    "/home/nutty/Desktop/Community/SAVault/src/examples/CharityVault.sol": {
+      "lastModificationDate": 1645599186046,
+      "contentHash": "a9a690cbfa547103c58ba44a0771d965",
       "sourceName": "src/examples/CharityVault.sol",
       "solcConfig": {
         "settings": {
@@ -227,12 +227,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "CharityVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "CharityVault.sol/CharityVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "CharityVault.sol/CharityVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/examples/DaoVault.sol": {
-      "lastModificationDate": 1645423404369,
+    "/home/nutty/Desktop/Community/SAVault/src/examples/DaoVault.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "7f36eb742bc7110f964a6a7d5324d3d8",
       "sourceName": "src/examples/DaoVault.sol",
       "solcConfig": {
@@ -266,13 +266,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "DaoVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "DaoVault.sol/DaoVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "DaoVault.sol/DaoVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/examples/DegenVault.sol": {
-      "lastModificationDate": 1645423420639,
-      "contentHash": "17bc62dae622f571cc12ebd79f51b4c9",
+    "/home/nutty/Desktop/Community/SAVault/src/examples/DegenVault.sol": {
+      "lastModificationDate": 1645599186046,
+      "contentHash": "0cf52ea5f633c5dc6ea2fd4dd6c0f005",
       "sourceName": "src/examples/DegenVault.sol",
       "solcConfig": {
         "settings": {
@@ -305,12 +305,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "DegenVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "DegenVault.sol/DegenVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "DegenVault.sol/DegenVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/examples/SuperFluidVault.sol": {
-      "lastModificationDate": 1645423436149,
+    "/home/nutty/Desktop/Community/SAVault/src/examples/SuperFluidVault.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "0944e7e31eafbdf3062dfc138b90e227",
       "sourceName": "src/examples/SuperFluidVault.sol",
       "solcConfig": {
@@ -345,12 +345,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "SuperFluidVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "SuperFluidVault.sol/SuperFluidVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "SuperFluidVault.sol/SuperFluidVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/interfaces/IAavePool.sol": {
-      "lastModificationDate": 1645376489142,
+    "/home/nutty/Desktop/Community/SAVault/src/interfaces/IAavePool.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "37a4e21170834730623ff3f976fa9360",
       "sourceName": "src/interfaces/IAavePool.sol",
       "solcConfig": {
@@ -379,42 +379,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "IPool": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IAavePool.sol/IPool.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "IAavePool.sol/IPool.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/interfaces/INftDataGenerator.sol": {
-      "lastModificationDate": 1645376489142,
-      "contentHash": "89bbd90ec8dc89c108ae1c242f1944ee",
-      "sourceName": "src/interfaces/INftDataGenerator.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london"
-        }
-      },
-      "imports": [],
-      "versionRequirement": ">=0.8.0",
-      "artifacts": {}
-    },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/interfaces/IStrategy.sol": {
-      "lastModificationDate": 1645376489143,
+    "/home/nutty/Desktop/Community/SAVault/src/interfaces/IStrategy.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "3d597ec8b9bbc0060ff71dba6b286759",
       "sourceName": "src/interfaces/IStrategy.sol",
       "solcConfig": {
@@ -443,12 +413,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "IStrategy": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "IStrategy.sol/IStrategy.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "IStrategy.sol/IStrategy.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/interfaces/yearnVault.sol": {
-      "lastModificationDate": 1645362742793,
+    "/home/nutty/Desktop/Community/SAVault/src/interfaces/yearnVault.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "f9e5eba0fe8908cab08513cafb4f1e13",
       "sourceName": "src/interfaces/yearnVault.sol",
       "solcConfig": {
@@ -477,12 +447,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "yVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "yearnVault.sol/yVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "yearnVault.sol/yVault.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/strategies/ExampleAaveStrat.sol": {
-      "lastModificationDate": 1645376489143,
+    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleAaveStrat.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "6381e13f226b6e83dca4f0f7a4f17e0c",
       "sourceName": "src/strategies/ExampleAaveStrat.sol",
       "solcConfig": {
@@ -514,12 +484,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "AaveStrategy": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleAaveStrat.sol/AaveStrategy.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "ExampleAaveStrat.sol/AaveStrategy.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/strategies/ExampleElementStart.sol": {
-      "lastModificationDate": 1645362742793,
+    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleElementStart.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
       "sourceName": "src/strategies/ExampleElementStart.sol",
       "solcConfig": {
@@ -548,8 +518,8 @@
       "versionRequirement": null,
       "artifacts": {}
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/strategies/ExampleTrueStrat.sol": {
-      "lastModificationDate": 1645362742793,
+    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleTrueStrat.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
       "sourceName": "src/strategies/ExampleTrueStrat.sol",
       "solcConfig": {
@@ -578,8 +548,8 @@
       "versionRequirement": null,
       "artifacts": {}
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/strategies/ExampleYearnStrat.sol": {
-      "lastModificationDate": 1645376489143,
+    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleYearnStrat.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "d248603762497c9b3aa371f1817f57e5",
       "sourceName": "src/strategies/ExampleYearnStrat.sol",
       "solcConfig": {
@@ -611,12 +581,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "YearnStrategy": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleYearnStrat.sol/YearnStrategy.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "ExampleYearnStrat.sol/YearnStrategy.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/test/Console.sol": {
-      "lastModificationDate": 1645376489144,
+    "/home/nutty/Desktop/Community/SAVault/src/test/Console.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "342456e549977076f26435e4fb0f3eb8",
       "sourceName": "src/test/Console.sol",
       "solcConfig": {
@@ -645,12 +615,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "console": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Console.sol/console.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "Console.sol/console.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/test/Contract.t.sol": {
-      "lastModificationDate": 1645423329455,
+    "/home/nutty/Desktop/Community/SAVault/src/test/Contract.t.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "cbd843f070e68a8e997cc378b199f666",
       "sourceName": "src/test/Contract.t.sol",
       "solcConfig": {
@@ -688,15 +658,15 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "CheatCodes": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Contract.t.sol/CheatCodes.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "Contract.t.sol/CheatCodes.json"
         },
         "ContractTest": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "Contract.t.sol/ContractTest.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "Contract.t.sol/ContractTest.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/tokens/ERC20.sol": {
-      "lastModificationDate": 1645362742793,
+    "/home/nutty/Desktop/Community/SAVault/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "a1c858988878a39d105e878d399170d3",
       "sourceName": "src/tokens/ERC20.sol",
       "solcConfig": {
@@ -725,12 +695,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "ERC20": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC20.sol/ERC20.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "ERC20.sol/ERC20.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/tokens/ERC721.sol": {
-      "lastModificationDate": 1645376489144,
+    "/home/nutty/Desktop/Community/SAVault/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "9df8f42e32dc544506aadeaf9d466b43",
       "sourceName": "src/tokens/ERC721.sol",
       "solcConfig": {
@@ -759,12 +729,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "ERC721": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC721.sol/ERC721.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "ERC721.sol/ERC721.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/tokens/MockERC20.sol": {
-      "lastModificationDate": 1645376489144,
+    "/home/nutty/Desktop/Community/SAVault/src/tokens/MockERC20.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "f543318d3269f33dc408e112692f206e",
       "sourceName": "src/tokens/MockERC20.sol",
       "solcConfig": {
@@ -795,12 +765,12 @@
       "versionRequirement": "^0.8.4",
       "artifacts": {
         "MockERC20": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "MockERC20.sol/MockERC20.json"
         }
       }
     },
-    "/Users/nathanbustamante/Desktop/SAVaults/src/tokens/MockYearnVault.sol": {
-      "lastModificationDate": 1645376489144,
+    "/home/nutty/Desktop/Community/SAVault/src/tokens/MockYearnVault.sol": {
+      "lastModificationDate": 1645599186046,
       "contentHash": "e9757daf1912800428f8fc74e764418e",
       "sourceName": "src/tokens/MockYearnVault.sol",
       "solcConfig": {
@@ -831,7 +801,7 @@
       "versionRequirement": "^0.8.4",
       "artifacts": {
         "MockYearnVault": {
-          "0.8.10+commit.fc410830.Darwin.appleclang": "MockYearnVault.sol/MockYearnVault.json"
+          "0.8.11+commit.d7f03943.Linux.gcc": "MockYearnVault.sol/MockYearnVault.json"
         }
       }
     }
