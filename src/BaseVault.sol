@@ -41,8 +41,11 @@ contract BaseVault is ERC721 {
     uint256 public yeildPerDeposit;
     uint256 public totalDeposits;
 
-    // used when calculating rewards and yield Strategy deposits
+
+    // used to account for random deposits
     uint256 internal lastKnownContractBalance;
+    
+    // used when calculating rewards and yield Strategy deposits
     uint256 internal lastKnownStrategyTotal;
     uint256 internal depositedToStrat;
 
