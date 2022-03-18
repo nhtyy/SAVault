@@ -5,6 +5,8 @@ import "./tokens/ERC721.sol";
 import "./tokens/ERC20.sol";
 import "./interfaces/IStrategy.sol";
 
+import { console } from "./test/Console.sol";
+
 ///======================================================================================================================================
 // Vaults are designed to be human readeable and as minimal as possible
 // 
@@ -70,7 +72,7 @@ contract BaseVault is ERC721 {
     // }
 
     function baseInit(string memory _name, string memory _symbol, address _token, address strategy) public {
-        require(isInitialized == 0);
+        require(isInitialized == 0, "Already Initialized");
 
         _nftInit(_name, _symbol);
 
@@ -78,7 +80,10 @@ contract BaseVault is ERC721 {
 
         vaultToken = ERC20(_token);
 
+        currentId = 1;
+
         isInitialized = 1;
+
     }
 
 

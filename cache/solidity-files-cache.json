@@ -29,11 +29,15 @@
       },
       "imports": [],
       "versionRequirement": ">=0.4.23",
-      "artifacts": {}
+      "artifacts": {
+        "DSTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/BaseVault.sol": {
-      "lastModificationDate": 1647577107627,
-      "contentHash": "6193ef7fba49b741aff16418c9246dfb",
+      "lastModificationDate": 1647585980460,
+      "contentHash": "2f480fcfa04ab322793c9ba0ccd8461e",
       "sourceName": "src/BaseVault.sol",
       "solcConfig": {
         "settings": {
@@ -59,6 +63,7 @@
       },
       "imports": [
         "src/interfaces/IStrategy.sol",
+        "src/test/Console.sol",
         "src/tokens/ERC20.sol",
         "src/tokens/ERC721.sol"
       ],
@@ -70,8 +75,8 @@
       }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/VaultFactory.sol": {
-      "lastModificationDate": 1647576173099,
-      "contentHash": "367b3c1dd7add2acc693e1e238fad42e",
+      "lastModificationDate": 1647585782372,
+      "contentHash": "2bb34ff11139b34c272b2b59cda6cd3f",
       "sourceName": "src/VaultFactory.sol",
       "solcConfig": {
         "settings": {
@@ -99,11 +104,21 @@
         "src/interfaces/IStrategy.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "Strat": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/Strat.json"
+        },
+        "Vault": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/Vault.json"
+        },
+        "VaultFactory": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "VaultFactory.sol/VaultFactory.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/controllers/DAOMultisig.sol": {
-      "lastModificationDate": 1647150117634,
-      "contentHash": "16eda04fd0410999deb9dea2919e9386",
+      "lastModificationDate": 1647576889257,
+      "contentHash": "90f59d9d660ff2c1ea213c26be9fd7c7",
       "sourceName": "src/controllers/DAOMultisig.sol",
       "solcConfig": {
         "settings": {
@@ -127,19 +142,13 @@
           "evmVersion": "london"
         }
       },
-      "imports": [
-        "src/BaseVault.sol",
-        "src/examples/DaoVault.sol",
-        "src/interfaces/IStrategy.sol",
-        "src/tokens/ERC20.sol",
-        "src/tokens/ERC721.sol"
-      ],
-      "versionRequirement": ">=0.8.0",
+      "imports": [],
+      "versionRequirement": null,
       "artifacts": {}
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/controllers/PDelegateDAOController.sol": {
-      "lastModificationDate": 1647150117634,
-      "contentHash": "1d4c1d4ed46f5a8d9b563f1aa7a2936c",
+      "lastModificationDate": 1647576892702,
+      "contentHash": "ebb42361dd9e6ff516d8e92faf83037f",
       "sourceName": "src/controllers/PDelegateDAOController.sol",
       "solcConfig": {
         "settings": {
@@ -163,14 +172,8 @@
           "evmVersion": "london"
         }
       },
-      "imports": [
-        "src/BaseVault.sol",
-        "src/examples/DaoVault.sol",
-        "src/interfaces/IStrategy.sol",
-        "src/tokens/ERC20.sol",
-        "src/tokens/ERC721.sol"
-      ],
-      "versionRequirement": ">=0.8.0",
+      "imports": [],
+      "versionRequirement": null,
       "artifacts": {}
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/examples/CharityVault.sol": {
@@ -202,6 +205,7 @@
       "imports": [
         "src/BaseVault.sol",
         "src/interfaces/IStrategy.sol",
+        "src/test/Console.sol",
         "src/tokens/ERC20.sol",
         "src/tokens/ERC721.sol"
       ],
@@ -241,6 +245,7 @@
       "imports": [
         "src/BaseVault.sol",
         "src/interfaces/IStrategy.sol",
+        "src/test/Console.sol",
         "src/tokens/ERC20.sol",
         "src/tokens/ERC721.sol"
       ],
@@ -280,6 +285,7 @@
       "imports": [
         "src/BaseVault.sol",
         "src/interfaces/IStrategy.sol",
+        "src/test/Console.sol",
         "src/tokens/ERC20.sol",
         "src/tokens/ERC721.sol"
       ],
@@ -318,7 +324,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "IPool": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IAavePool.sol/IPool.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/interfaces/IStrategy.sol": {
       "lastModificationDate": 1647150117635,
@@ -348,7 +358,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "IStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IStrategy.sol/IStrategy.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/interfaces/yearnVault.sol": {
       "lastModificationDate": 1647150117635,
@@ -378,7 +392,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "yVault": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "yearnVault.sol/yVault.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleAaveStrat.sol": {
       "lastModificationDate": 1647150117636,
@@ -411,7 +429,11 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "AaveStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleAaveStrat.sol/AaveStrategy.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleElementStart.sol": {
       "lastModificationDate": 1647150117636,
@@ -504,7 +526,11 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "YearnStrategy": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ExampleYearnStrat.sol/YearnStrategy.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/test/Console.sol": {
       "lastModificationDate": 1647150117636,
@@ -534,11 +560,15 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "console": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Console.sol/console.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/test/Contract.t.sol": {
-      "lastModificationDate": 1647577193080,
-      "contentHash": "b76585d10664e266bdf259b39d19f621",
+      "lastModificationDate": 1647585660899,
+      "contentHash": "e65b40b62aeb73e4cdaf8a8c2da6756f",
       "sourceName": "src/test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -565,6 +595,7 @@
       "imports": [
         "lib/ds-test/src/test.sol",
         "src/BaseVault.sol",
+        "src/VaultFactory.sol",
         "src/examples/CharityVault.sol",
         "src/interfaces/IStrategy.sol",
         "src/interfaces/yearnVault.sol",
@@ -612,7 +643,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {}
+      "artifacts": {
+        "ERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/tokens/ERC721.sol": {
       "lastModificationDate": 1647576981625,
@@ -678,7 +713,11 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": "^0.8.4",
-      "artifacts": {}
+      "artifacts": {
+        "MockERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+        }
+      }
     }
   }
 }

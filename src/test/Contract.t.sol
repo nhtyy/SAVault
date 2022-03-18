@@ -6,7 +6,8 @@ import "../BaseVault.sol";
 import "../examples/CharityVault.sol";
 import "../strategies/ExampleYearnStrat.sol";
 import "../tokens/MockERC20.sol";
-import {console} from "./Console.sol";
+import "../VaultFactory.sol";
+import { console } from "./Console.sol";
 
 struct Deposit {
     uint256 amount;
@@ -21,6 +22,7 @@ contract ContractTest is DSTest {
     BaseVault vault;
     CharityVault charityVault;
     YearnStrategy yearn;
+    VaultFactory factory;
     CheatCodes cheats = CheatCodes(HEVM_ADDRESS);
 
 
@@ -30,6 +32,7 @@ contract ContractTest is DSTest {
         erc20 = new MockERC20("shit", "coin", 2**256-1);
         vault = new BaseVault();
         yearn = new YearnStrategy();
+        factory = new VaultFactory();
 
         vault.baseInit("scv", "scv", address(erc20), address(0));
     }
@@ -87,7 +90,17 @@ contract ContractTest is DSTest {
     }
 
     function testDeploy() public {
-        
+
+        // set vault addr
+        factory.setVImpl(1, address(vault));
+
+        address clone = factory.createVault(1, keccak256(abi.encodePacked("test", "test")), "test", "test", address(erc20));
+
+        // Person 1
+        erc20.approve(clone, 10e18);
+
+        // mint 1
+        id = BaseVault(clone).mintNewNft(1e18);
     }
 }
 

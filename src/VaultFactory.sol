@@ -4,7 +4,7 @@ pragma solidity >=0.8.0;
 import "./interfaces/IStrategy.sol";
 
 interface Vault {
-    function init(string memory _name, string memory _symbol, address _token, address strategy) external;
+    function baseInit(string memory _name, string memory _symbol, address _token, address strategy) external;
 }
 
 interface Strat {
@@ -47,7 +47,7 @@ contract VaultFactory {
     function createVault(
         uint256 vKey, 
         bytes32 id,
-        uint256 sImplKey,
+        // uint256 sImplKey,
         string memory name, 
         string memory symbol, 
         address token
@@ -55,11 +55,11 @@ contract VaultFactory {
 
         vault = create(vImpl[vKey]);
 
-        address strat = create(sImpl[sImplKey]);
+        // address strat = create(sImpl[sImplKey]);
 
-        Vault(vault).init(name, symbol, token, strat);
+        Vault(vault).baseInit(name, symbol, token, address(0));
 
-        Strat(strat).init(underlying[sImplKey][token], token, vault);
+        // Strat(strat).init(underlying[sImplKey][token], token, vault);
 
         // push identifier to arry
         keys.push(id);
