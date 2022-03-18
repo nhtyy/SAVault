@@ -35,21 +35,21 @@ contract DegenVault is BaseVault {
 ///  Constructor
 ///======================================================================================================================================
 
-    constructor(
-
+    function init(
         address _vaultToken,
+        address _strategy,
         uint16 _jackpotBP,
         uint16 _dividendsBP,
         uint256 _minimumPrice,
         uint256 _intialTimeSeconds,
         uint16 _timeDecay,
         uint16 _growthFactor,
-        string memory name,
-        string memory symbol
-
-    ) BaseVault(_vaultToken, name, symbol) {
-
+        string memory _name,
+        string memory _symbol
+    ) public {
         require(_jackpotBP + _dividendsBP <= 10000);
+
+        baseInit(_name, _symbol, _vaultToken, _strategy);
 
         ctx = Context(_jackpotBP, _dividendsBP, _timeDecay, _growthFactor, 4);
         minimumPrice = _minimumPrice;

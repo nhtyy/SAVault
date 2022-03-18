@@ -1,8 +1,81 @@
 {
   "abi": [
     {
-      "type": "function",
-      "name": "approve",
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
       "inputs": [
         {
           "internalType": "address",
@@ -15,19 +88,20 @@
           "type": "uint256"
         }
       ],
+      "name": "approve",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
       "name": "balanceOf",
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
       "outputs": [
         {
           "internalType": "uint256",
@@ -35,12 +109,12 @@
           "type": "uint256"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "currentId",
       "inputs": [],
+      "name": "currentId",
       "outputs": [
         {
           "internalType": "uint256",
@@ -48,11 +122,10 @@
           "type": "uint256"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "getApproved",
       "inputs": [
         {
           "internalType": "uint256",
@@ -60,6 +133,7 @@
           "type": "uint256"
         }
       ],
+      "name": "getApproved",
       "outputs": [
         {
           "internalType": "address",
@@ -67,11 +141,10 @@
           "type": "address"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "isApprovedForAll",
       "inputs": [
         {
           "internalType": "address",
@@ -84,6 +157,7 @@
           "type": "address"
         }
       ],
+      "name": "isApprovedForAll",
       "outputs": [
         {
           "internalType": "bool",
@@ -91,12 +165,12 @@
           "type": "bool"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "name",
       "inputs": [],
+      "name": "name",
       "outputs": [
         {
           "internalType": "string",
@@ -104,11 +178,10 @@
           "type": "string"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "ownerOf",
       "inputs": [
         {
           "internalType": "uint256",
@@ -116,6 +189,7 @@
           "type": "uint256"
         }
       ],
+      "name": "ownerOf",
       "outputs": [
         {
           "internalType": "address",
@@ -123,11 +197,10 @@
           "type": "address"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "setApprovalForAll",
       "inputs": [
         {
           "internalType": "address",
@@ -140,12 +213,12 @@
           "type": "bool"
         }
       ],
+      "name": "setApprovalForAll",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "supportsInterface",
       "inputs": [
         {
           "internalType": "bytes4",
@@ -153,6 +226,7 @@
           "type": "bytes4"
         }
       ],
+      "name": "supportsInterface",
       "outputs": [
         {
           "internalType": "bool",
@@ -160,12 +234,12 @@
           "type": "bool"
         }
       ],
-      "stateMutability": "pure"
+      "stateMutability": "pure",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "symbol",
       "inputs": [],
+      "name": "symbol",
       "outputs": [
         {
           "internalType": "string",
@@ -173,11 +247,10 @@
           "type": "string"
         }
       ],
-      "stateMutability": "view"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "transferFrom",
       "inputs": [
         {
           "internalType": "address",
@@ -195,74 +268,10 @@
           "type": "uint256"
         }
       ],
+      "name": "transferFrom",
       "outputs": [],
-      "stateMutability": "nonpayable"
-    },
-    {
-      "type": "event",
-      "name": "Approval",
-      "inputs": [
-        {
-          "name": "owner",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "spender",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "id",
-          "type": "uint256",
-          "indexed": true
-        }
-      ],
-      "anonymous": false
-    },
-    {
-      "type": "event",
-      "name": "ApprovalForAll",
-      "inputs": [
-        {
-          "name": "owner",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "operator",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "approved",
-          "type": "bool",
-          "indexed": false
-        }
-      ],
-      "anonymous": false
-    },
-    {
-      "type": "event",
-      "name": "Transfer",
-      "inputs": [
-        {
-          "name": "from",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "to",
-          "type": "address",
-          "indexed": true
-        },
-        {
-          "name": "id",
-          "type": "uint256",
-          "indexed": true
-        }
-      ],
-      "anonymous": false
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
   "bytecode": {

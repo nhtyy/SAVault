@@ -4,7 +4,7 @@ pragma solidity >=0.8.0;
 import "../../lib/ds-test/src/test.sol";
 import "../BaseVault.sol";
 import "../examples/CharityVault.sol";
-
+import "../strategies/ExampleYearnStrat.sol";
 import "../tokens/MockERC20.sol";
 import {console} from "./Console.sol";
 
@@ -17,27 +17,21 @@ contract ContractTest is DSTest {
 
     uint256 id;
 
-    MockERC20 erc20 = new MockERC20("shit", "coin", 2**256-1);
-    BaseVault vault = new BaseVault(address(erc20), "shit coim vault", "scv");
-    CharityVault charityVault = new CharityVault(address(erc20), addr, 5000, "scv", "scv");
+    MockERC20 erc20;
+    BaseVault vault;
+    CharityVault charityVault;
+    YearnStrategy yearn;
     CheatCodes cheats = CheatCodes(HEVM_ADDRESS);
+
 
     address addr = 0x78B757200a1d64add5BA39B31c11E0a4479B992c;
 
     function setUp() public {
-      
+        erc20 = new MockERC20("shit", "coin", 2**256-1);
+        vault = new BaseVault();
+        yearn = new YearnStrategy();
 
-    }
-
-    function testCharity() public {
-
-        erc20.approve(address(charityVault), 2e18);
-        charityVault.mintNewNft(1e18);
-
-        erc20.transfer(address(charityVault), 1e18);
-        charityVault.mintNewNft(1e18);
-
-        assertEq(5e17, charityVault.yieldForRecipient());
+        vault.baseInit("scv", "scv", address(erc20), address(0));
     }
 
     function testWithRandomSend() public {
@@ -92,6 +86,9 @@ contract ContractTest is DSTest {
         assertEq(withdrawable, expected);
     }
 
+    function testDeploy() public {
+        
+    }
 }
 
 interface CheatCodes {

@@ -12,16 +12,13 @@ contract DaoVault is BaseVault {
 
     uint256 managed;
 
-    constructor( 
-        address _vaultToken,
-        string memory name,
-        string memory symbol
-    ) BaseVault( 
-        _vaultToken,
-        name,
-        symbol
-    ) {
-        // Add NAme info
+    function init(
+        string memory _name, 
+        string memory _symbol, 
+        address _token, 
+        address strategy
+    ) public {
+        baseInit(_name, _symbol, _token, strategy);
     }
 
 ///======================================================================================================================================

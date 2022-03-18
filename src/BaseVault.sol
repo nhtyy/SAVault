@@ -31,7 +31,7 @@ contract BaseVault is ERC721 {
     }
 
 ///======================================================================================================================================
-/// State Variables
+/// Accounting State
 ///======================================================================================================================================
 
     // tokenID => Deposits
@@ -39,33 +39,46 @@ contract BaseVault is ERC721 {
 
     //sum of yeild/totalDeposits scaled by 1e10
     uint256 public yeildPerDeposit;
-    uint256 public totalDeposits;
 
+    uint256 public totalDeposits;
 
     // used to account for random deposits
     uint256 internal lastKnownContractBalance;
     
     // used when calculating rewards and yield Strategy deposits
     uint256 internal lastKnownStrategyTotal;
+
     uint256 internal depositedToStrat;
 
-    ERC20 immutable vaultToken;
-    address immutable deployer; // can only set the strat ONCE
-    IStrategy strat;
-
 ///======================================================================================================================================
-/// Constructor
+/// Everything Else
 ///======================================================================================================================================
 
-    constructor(
-        address _vaultToken,
-        string memory name,
-        string memory symbol
+    ERC20 public vaultToken;
 
-    ) ERC721(name, symbol) {
+    uint256 internal isInitialized;
 
-        vaultToken = ERC20(_vaultToken);
-        deployer = msg.sender;
+    IStrategy public strat;
+
+///======================================================================================================================================
+/// Init
+///======================================================================================================================================
+
+    // constructor() {
+    //     // call init on impl on deployment
+    //     baseInit("Init", "Init", address(0), address(0));
+    // }
+
+    function baseInit(string memory _name, string memory _symbol, address _token, address strategy) public {
+        require(isInitialized == 0);
+
+        _nftInit(_name, _symbol);
+
+        strat = IStrategy(strategy);
+
+        vaultToken = ERC20(_token);
+
+        isInitialized = 1;
     }
 
 
@@ -264,23 +277,6 @@ contract BaseVault is ERC721 {
         returns (MetaData memory) {
 
         return MetaData(name, address(this), withdrawableById(id), id, 0);
-
-    }
-
-///======================================================================================================================================
-/// Used after deployment
-///
-/// Likely to be removed in upcoming versions
-///======================================================================================================================================
-
-    function setStrat(address addr) external {
-
-        require ( 
-            msg.sender == deployer && 
-            address(strat) == address(0)
-        );
-
-        strat = IStrategy(addr);
 
     }
 }

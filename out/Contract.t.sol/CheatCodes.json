@@ -1,8 +1,6 @@
 {
   "abi": [
     {
-      "type": "function",
-      "name": "accesses",
       "inputs": [
         {
           "internalType": "address",
@@ -10,6 +8,7 @@
           "type": "address"
         }
       ],
+      "name": "accesses",
       "outputs": [
         {
           "internalType": "bytes32[]",
@@ -22,11 +21,10 @@
           "type": "bytes32[]"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "addr",
       "inputs": [
         {
           "internalType": "uint256",
@@ -34,6 +32,7 @@
           "type": "uint256"
         }
       ],
+      "name": "addr",
       "outputs": [
         {
           "internalType": "address",
@@ -41,18 +40,17 @@
           "type": "address"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "clearMockedCalls",
       "inputs": [],
+      "name": "clearMockedCalls",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "deal",
       "inputs": [
         {
           "internalType": "address",
@@ -65,12 +63,12 @@
           "type": "uint256"
         }
       ],
+      "name": "deal",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "etch",
       "inputs": [
         {
           "internalType": "address",
@@ -83,12 +81,12 @@
           "type": "bytes"
         }
       ],
+      "name": "etch",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "expectCall",
       "inputs": [
         {
           "internalType": "address",
@@ -101,12 +99,12 @@
           "type": "bytes"
         }
       ],
+      "name": "expectCall",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "expectEmit",
       "inputs": [
         {
           "internalType": "bool",
@@ -129,12 +127,12 @@
           "type": "bool"
         }
       ],
+      "name": "expectEmit",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "expectRevert",
       "inputs": [
         {
           "internalType": "bytes4",
@@ -142,12 +140,12 @@
           "type": "bytes4"
         }
       ],
+      "name": "expectRevert",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "expectRevert",
       "inputs": [
         {
           "internalType": "bytes",
@@ -155,12 +153,12 @@
           "type": "bytes"
         }
       ],
+      "name": "expectRevert",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "fee",
       "inputs": [
         {
           "internalType": "uint256",
@@ -168,12 +166,12 @@
           "type": "uint256"
         }
       ],
+      "name": "fee",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "ffi",
       "inputs": [
         {
           "internalType": "string[]",
@@ -181,6 +179,7 @@
           "type": "string[]"
         }
       ],
+      "name": "ffi",
       "outputs": [
         {
           "internalType": "bytes",
@@ -188,11 +187,10 @@
           "type": "bytes"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "getCode",
       "inputs": [
         {
           "internalType": "string",
@@ -200,6 +198,7 @@
           "type": "string"
         }
       ],
+      "name": "getCode",
       "outputs": [
         {
           "internalType": "bytes",
@@ -207,11 +206,10 @@
           "type": "bytes"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "label",
       "inputs": [
         {
           "internalType": "address",
@@ -224,12 +222,12 @@
           "type": "string"
         }
       ],
+      "name": "label",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "load",
       "inputs": [
         {
           "internalType": "address",
@@ -242,6 +240,7 @@
           "type": "bytes32"
         }
       ],
+      "name": "load",
       "outputs": [
         {
           "internalType": "bytes32",
@@ -249,11 +248,33 @@
           "type": "bytes32"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
       "name": "mockCall",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "inputs": [
         {
           "internalType": "address",
@@ -261,60 +282,37 @@
           "type": "address"
         },
         {
-          "internalType": "bytes",
+          "internalType": "address",
           "name": "",
-          "type": "bytes"
-        },
-        {
-          "internalType": "bytes",
-          "name": "",
-          "type": "bytes"
+          "type": "address"
         }
       ],
-      "outputs": [],
-      "stateMutability": "nonpayable"
-    },
-    {
-      "type": "function",
       "name": "prank",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        },
         {
           "internalType": "address",
           "name": "",
           "type": "address"
         }
       ],
-      "outputs": [],
-      "stateMutability": "nonpayable"
-    },
-    {
-      "type": "function",
       "name": "prank",
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "record",
       "inputs": [],
+      "name": "record",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "roll",
       "inputs": [
         {
           "internalType": "uint256",
@@ -322,12 +320,12 @@
           "type": "uint256"
         }
       ],
+      "name": "roll",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "sign",
       "inputs": [
         {
           "internalType": "uint256",
@@ -340,6 +338,7 @@
           "type": "bytes32"
         }
       ],
+      "name": "sign",
       "outputs": [
         {
           "internalType": "uint8",
@@ -357,11 +356,10 @@
           "type": "bytes32"
         }
       ],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "startPrank",
       "inputs": [
         {
           "internalType": "address",
@@ -369,12 +367,12 @@
           "type": "address"
         }
       ],
+      "name": "startPrank",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "startPrank",
       "inputs": [
         {
           "internalType": "address",
@@ -387,19 +385,19 @@
           "type": "address"
         }
       ],
+      "name": "startPrank",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "stopPrank",
       "inputs": [],
+      "name": "stopPrank",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "store",
       "inputs": [
         {
           "internalType": "address",
@@ -417,12 +415,12 @@
           "type": "bytes32"
         }
       ],
+      "name": "store",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     },
     {
-      "type": "function",
-      "name": "warp",
       "inputs": [
         {
           "internalType": "uint256",
@@ -430,8 +428,10 @@
           "type": "uint256"
         }
       ],
+      "name": "warp",
       "outputs": [],
-      "stateMutability": "nonpayable"
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
   "bytecode": {
@@ -443,5 +443,32 @@
     "object": "0x",
     "sourceMap": "",
     "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "accesses(address)": "65bc9481",
+    "addr(uint256)": "ffa18649",
+    "clearMockedCalls()": "3fdf4e15",
+    "deal(address,uint256)": "c88a5e6d",
+    "etch(address,bytes)": "b4d6c782",
+    "expectCall(address,bytes)": "bd6af434",
+    "expectEmit(bool,bool,bool,bool)": "491cc7c2",
+    "expectRevert(bytes)": "f28dceb3",
+    "expectRevert(bytes4)": "c31eb0e0",
+    "fee(uint256)": "39b37ab0",
+    "ffi(string[])": "89160467",
+    "getCode(string)": "8d1cc925",
+    "label(address,string)": "c657c718",
+    "load(address,bytes32)": "667f9d70",
+    "mockCall(address,bytes,bytes)": "b96213e4",
+    "prank(address)": "ca669fa7",
+    "prank(address,address)": "47e50cce",
+    "record()": "266cf109",
+    "roll(uint256)": "1f7b4f30",
+    "sign(uint256,bytes32)": "e341eaa4",
+    "startPrank(address)": "06447d56",
+    "startPrank(address,address)": "45b56078",
+    "stopPrank()": "90c5013b",
+    "store(address,bytes32,bytes32)": "70ca10bb",
+    "warp(uint256)": "e5d6bf02"
   }
 }

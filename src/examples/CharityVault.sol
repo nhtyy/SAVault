@@ -24,24 +24,18 @@ contract CharityVault is BaseVault {
 /// Constructor
 ///======================================================================================================================================
 
-    constructor( 
+    function init(
+        string memory _name, 
+        string memory _symbol, 
+        address _token, address strategy, 
+        uint16 _tokenPercent, 
+        address _recipient
+    ) public {
+        require (isInitialized == 0);
 
-        address _vaultToken,
-        address _recipient,
-        uint16 _tokenPercent,
-        string memory name,
-        string memory symbol
-
-    ) BaseVault( 
-
-        _vaultToken,
-        name,
-        symbol
-
-    ) {
+        baseInit(_name, _symbol, _token, strategy);
 
         ctx = Context(_tokenPercent, 3, _recipient);
-
     }
 
 ///======================================================================================================================================

@@ -1,8 +1,8 @@
 {
   "_format": "ethers-rs-sol-cache-2",
   "files": {
-    "/home/nutty/Desktop/Community/SAVault/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1645599186042,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1647150117626,
       "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
       "sourceName": "lib/ds-test/src/test.sol",
       "solcConfig": {
@@ -29,15 +29,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.4.23",
-      "artifacts": {
-        "DSTest": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "test.sol/DSTest.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/BaseVault.sol": {
-      "lastModificationDate": 1645599939043,
-      "contentHash": "eb45dbfee45b0b450d602e4c06e20bf4",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/BaseVault.sol": {
+      "lastModificationDate": 1647577107627,
+      "contentHash": "6193ef7fba49b741aff16418c9246dfb",
       "sourceName": "src/BaseVault.sol",
       "solcConfig": {
         "settings": {
@@ -69,13 +65,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "BaseVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "BaseVault.sol/BaseVault.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "BaseVault.sol/BaseVault.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/VaultFactory.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "25ba531246994ef0793d07447467486b",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/VaultFactory.sol": {
+      "lastModificationDate": 1647576173099,
+      "contentHash": "367b3c1dd7add2acc693e1e238fad42e",
       "sourceName": "src/VaultFactory.sol",
       "solcConfig": {
         "settings": {
@@ -103,18 +99,11 @@
         "src/interfaces/IStrategy.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "VaultFactory": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "VaultFactory.sol/VaultFactory.json"
-        },
-        "iVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "VaultFactory.sol/iVault.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/controllers/DAOMultisig.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "caa885f0cb9b79b3ea5c5363b01abeae",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/controllers/DAOMultisig.sol": {
+      "lastModificationDate": 1647150117634,
+      "contentHash": "16eda04fd0410999deb9dea2919e9386",
       "sourceName": "src/controllers/DAOMultisig.sol",
       "solcConfig": {
         "settings": {
@@ -146,15 +135,11 @@
         "src/tokens/ERC721.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "DAOMultsig": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "DAOMultisig.sol/DAOMultsig.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/controllers/PDelegateDAOController.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "36c099a11129eb6c6ee5459e6a2208b6",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/controllers/PDelegateDAOController.sol": {
+      "lastModificationDate": 1647150117634,
+      "contentHash": "1d4c1d4ed46f5a8d9b563f1aa7a2936c",
       "sourceName": "src/controllers/PDelegateDAOController.sol",
       "solcConfig": {
         "settings": {
@@ -186,15 +171,11 @@
         "src/tokens/ERC721.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "PDelegate": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "PDelegateDAOController.sol/PDelegate.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/examples/CharityVault.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "a9a690cbfa547103c58ba44a0771d965",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/examples/CharityVault.sol": {
+      "lastModificationDate": 1647576442726,
+      "contentHash": "48d2696f54c25c6ef42d154fbcd6aa0e",
       "sourceName": "src/examples/CharityVault.sol",
       "solcConfig": {
         "settings": {
@@ -227,13 +208,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "CharityVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "CharityVault.sol/CharityVault.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "CharityVault.sol/CharityVault.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/examples/DaoVault.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "7f36eb742bc7110f964a6a7d5324d3d8",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/examples/DaoVault.sol": {
+      "lastModificationDate": 1647576528070,
+      "contentHash": "633dca40a673633d344d7fe67ac7f217",
       "sourceName": "src/examples/DaoVault.sol",
       "solcConfig": {
         "settings": {
@@ -266,13 +247,13 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "DaoVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "DaoVault.sol/DaoVault.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "DaoVault.sol/DaoVault.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/examples/DegenVault.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "0cf52ea5f633c5dc6ea2fd4dd6c0f005",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/examples/DegenVault.sol": {
+      "lastModificationDate": 1647576643821,
+      "contentHash": "7c83af4448266e9cde516754976342f2",
       "sourceName": "src/examples/DegenVault.sol",
       "solcConfig": {
         "settings": {
@@ -305,52 +286,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "DegenVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "DegenVault.sol/DegenVault.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "DegenVault.sol/DegenVault.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/examples/SuperFluidVault.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "0944e7e31eafbdf3062dfc138b90e227",
-      "sourceName": "src/examples/SuperFluidVault.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london"
-        }
-      },
-      "imports": [
-        "src/BaseVault.sol",
-        "src/examples/CharityVault.sol",
-        "src/interfaces/IStrategy.sol",
-        "src/tokens/ERC20.sol",
-        "src/tokens/ERC721.sol"
-      ],
-      "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "SuperFluidVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "SuperFluidVault.sol/SuperFluidVault.json"
-        }
-      }
-    },
-    "/home/nutty/Desktop/Community/SAVault/src/interfaces/IAavePool.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/interfaces/IAavePool.sol": {
+      "lastModificationDate": 1647150117635,
       "contentHash": "37a4e21170834730623ff3f976fa9360",
       "sourceName": "src/interfaces/IAavePool.sol",
       "solcConfig": {
@@ -377,14 +318,10 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "IPool": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "IAavePool.sol/IPool.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/interfaces/IStrategy.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/interfaces/IStrategy.sol": {
+      "lastModificationDate": 1647150117635,
       "contentHash": "3d597ec8b9bbc0060ff71dba6b286759",
       "sourceName": "src/interfaces/IStrategy.sol",
       "solcConfig": {
@@ -411,14 +348,10 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "IStrategy": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "IStrategy.sol/IStrategy.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/interfaces/yearnVault.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/interfaces/yearnVault.sol": {
+      "lastModificationDate": 1647150117635,
       "contentHash": "f9e5eba0fe8908cab08513cafb4f1e13",
       "sourceName": "src/interfaces/yearnVault.sol",
       "solcConfig": {
@@ -445,14 +378,10 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "yVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "yearnVault.sol/yVault.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleAaveStrat.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleAaveStrat.sol": {
+      "lastModificationDate": 1647150117636,
       "contentHash": "6381e13f226b6e83dca4f0f7a4f17e0c",
       "sourceName": "src/strategies/ExampleAaveStrat.sol",
       "solcConfig": {
@@ -482,14 +411,10 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "AaveStrategy": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "ExampleAaveStrat.sol/AaveStrategy.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleElementStart.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleElementStart.sol": {
+      "lastModificationDate": 1647150117636,
       "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
       "sourceName": "src/strategies/ExampleElementStart.sol",
       "solcConfig": {
@@ -518,8 +443,8 @@
       "versionRequirement": null,
       "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleTrueStrat.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleTrueStrat.sol": {
+      "lastModificationDate": 1647150117636,
       "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
       "sourceName": "src/strategies/ExampleTrueStrat.sol",
       "solcConfig": {
@@ -548,9 +473,9 @@
       "versionRequirement": null,
       "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/strategies/ExampleYearnStrat.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "d248603762497c9b3aa371f1817f57e5",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/strategies/ExampleYearnStrat.sol": {
+      "lastModificationDate": 1647576211480,
+      "contentHash": "b77e325ae37661a750ab1203744c1ff0",
       "sourceName": "src/strategies/ExampleYearnStrat.sol",
       "solcConfig": {
         "settings": {
@@ -579,14 +504,10 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "YearnStrategy": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "ExampleYearnStrat.sol/YearnStrategy.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/test/Console.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/test/Console.sol": {
+      "lastModificationDate": 1647150117636,
       "contentHash": "342456e549977076f26435e4fb0f3eb8",
       "sourceName": "src/test/Console.sol",
       "solcConfig": {
@@ -613,15 +534,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "console": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "Console.sol/console.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/test/Contract.t.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "cbd843f070e68a8e997cc378b199f666",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/test/Contract.t.sol": {
+      "lastModificationDate": 1647577193080,
+      "contentHash": "b76585d10664e266bdf259b39d19f621",
       "sourceName": "src/test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -650,6 +567,8 @@
         "src/BaseVault.sol",
         "src/examples/CharityVault.sol",
         "src/interfaces/IStrategy.sol",
+        "src/interfaces/yearnVault.sol",
+        "src/strategies/ExampleYearnStrat.sol",
         "src/test/Console.sol",
         "src/tokens/ERC20.sol",
         "src/tokens/ERC721.sol",
@@ -658,15 +577,15 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "CheatCodes": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "Contract.t.sol/CheatCodes.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Contract.t.sol/CheatCodes.json"
         },
         "ContractTest": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "Contract.t.sol/ContractTest.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Contract.t.sol/ContractTest.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/tokens/ERC20.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1647150117637,
       "contentHash": "a1c858988878a39d105e878d399170d3",
       "sourceName": "src/tokens/ERC20.sol",
       "solcConfig": {
@@ -693,15 +612,11 @@
       },
       "imports": [],
       "versionRequirement": ">=0.8.0",
-      "artifacts": {
-        "ERC20": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "ERC20.sol/ERC20.json"
-        }
-      }
+      "artifacts": {}
     },
-    "/home/nutty/Desktop/Community/SAVault/src/tokens/ERC721.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "9df8f42e32dc544506aadeaf9d466b43",
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1647576981625,
+      "contentHash": "884745e843538253c278993d62b7da9e",
       "sourceName": "src/tokens/ERC721.sol",
       "solcConfig": {
         "settings": {
@@ -729,12 +644,12 @@
       "versionRequirement": ">=0.8.0",
       "artifacts": {
         "ERC721": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "ERC721.sol/ERC721.json"
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC721.sol/ERC721.json"
         }
       }
     },
-    "/home/nutty/Desktop/Community/SAVault/src/tokens/MockERC20.sol": {
-      "lastModificationDate": 1645599186046,
+    "/Users/nuhhtyy/Desktop/Projects/SAVault/src/tokens/MockERC20.sol": {
+      "lastModificationDate": 1647150117637,
       "contentHash": "f543318d3269f33dc408e112692f206e",
       "sourceName": "src/tokens/MockERC20.sol",
       "solcConfig": {
@@ -763,47 +678,7 @@
         "src/tokens/ERC20.sol"
       ],
       "versionRequirement": "^0.8.4",
-      "artifacts": {
-        "MockERC20": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "MockERC20.sol/MockERC20.json"
-        }
-      }
-    },
-    "/home/nutty/Desktop/Community/SAVault/src/tokens/MockYearnVault.sol": {
-      "lastModificationDate": 1645599186046,
-      "contentHash": "e9757daf1912800428f8fc74e764418e",
-      "sourceName": "src/tokens/MockYearnVault.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ]
-            }
-          },
-          "evmVersion": "london"
-        }
-      },
-      "imports": [
-        "src/interfaces/yearnVault.sol"
-      ],
-      "versionRequirement": "^0.8.4",
-      "artifacts": {
-        "MockYearnVault": {
-          "0.8.11+commit.d7f03943.Linux.gcc": "MockYearnVault.sol/MockYearnVault.json"
-        }
-      }
+      "artifacts": {}
     }
   }
 }
