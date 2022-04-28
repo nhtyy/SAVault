@@ -1,5 +1,13 @@
 {
-  "_format": "ethers-rs-sol-cache-2",
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "sources": "src",
+    "tests": "test",
+    "libraries": [
+      "lib"
+    ]
+  },
   "files": {
     "/Users/nuhhtyy/Desktop/Projects/SAVault/lib/ds-test/src/test.sol": {
       "lastModificationDate": 1647150117626,
@@ -10,6 +18,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -36,14 +47,17 @@
       }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/BaseVault.sol": {
-      "lastModificationDate": 1647585980460,
-      "contentHash": "2f480fcfa04ab322793c9ba0ccd8461e",
+      "lastModificationDate": 1651135519126,
+      "contentHash": "4f99b915c45312c4f3c23694b3cd4256",
       "sourceName": "src/BaseVault.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -83,6 +97,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -126,6 +143,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -156,6 +176,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -185,6 +208,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -226,6 +252,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -265,6 +294,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -306,6 +338,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -339,6 +374,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -374,6 +412,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -407,6 +448,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -445,6 +489,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -475,6 +522,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -504,6 +554,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -542,6 +595,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -567,14 +623,17 @@
       }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/test/Contract.t.sol": {
-      "lastModificationDate": 1647585660899,
-      "contentHash": "e65b40b62aeb73e4cdaf8a8c2da6756f",
+      "lastModificationDate": 1651135404281,
+      "contentHash": "3e63dc9bfbcd320fe2f634929301ad8b",
       "sourceName": "src/test/Contract.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -625,6 +684,9 @@
             "enabled": true,
             "runs": 200
           },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
           "outputSelection": {
             "*": {
               "": [
@@ -650,14 +712,17 @@
       }
     },
     "/Users/nuhhtyy/Desktop/Projects/SAVault/src/tokens/ERC721.sol": {
-      "lastModificationDate": 1647576981625,
-      "contentHash": "884745e843538253c278993d62b7da9e",
+      "lastModificationDate": 1651135498526,
+      "contentHash": "d974ac0311f02eff45de31dc2408a90c",
       "sourceName": "src/tokens/ERC721.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {
@@ -692,6 +757,9 @@
           "optimizer": {
             "enabled": true,
             "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
           },
           "outputSelection": {
             "*": {

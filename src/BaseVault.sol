@@ -62,6 +62,8 @@ contract BaseVault is ERC721 {
 
     IStrategy public strat;
 
+    uint256 public currentId;
+
 ///======================================================================================================================================
 /// Init
 ///======================================================================================================================================
@@ -79,8 +81,6 @@ contract BaseVault is ERC721 {
         strat = IStrategy(strategy);
 
         vaultToken = ERC20(_token);
-
-        currentId = 1;
 
         isInitialized = 1;
 
@@ -133,7 +133,11 @@ contract BaseVault is ERC721 {
 
     function _mintNewNFT(uint256 amount) internal returns (uint256) {
 
-        uint256 id = _mint(msg.sender, currentId);
+        uint256 id;
+
+        unchecked {
+            id = _mint(msg.sender, ++currentId);
+        }
 
         if (totalDeposits > 0) {
             distributeYeild();

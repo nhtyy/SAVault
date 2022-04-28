@@ -16,8 +16,6 @@ struct Deposit {
 
 contract ContractTest is DSTest {
 
-    uint256 id;
-
     MockERC20 erc20;
     BaseVault vault;
     CharityVault charityVault;
@@ -46,7 +44,7 @@ contract ContractTest is DSTest {
         erc20.transfer(addr, 1e18);
 
         // mint 1
-        id = vault.mintNewNft(1e18);
+        uint256 id = vault.mintNewNft(1e18);
 
         // Person 2
         cheats.startPrank(addr);
@@ -100,7 +98,7 @@ contract ContractTest is DSTest {
         erc20.approve(clone, 10e18);
 
         // mint 1
-        id = BaseVault(clone).mintNewNft(1e18);
+        uint256 id = BaseVault(clone).mintNewNft(1e18);
     }
 }
 

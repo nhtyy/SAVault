@@ -27,10 +27,6 @@ abstract contract ERC721 {
                             ERC721 STORAGE                        
     //////////////////////////////////////////////////////////////*/
 
-    address vault;
-
-    uint256 public currentId = 1;
-
     mapping(address => uint256) public balanceOf;
 
     mapping(uint256 => address) public ownerOf;
@@ -120,7 +116,6 @@ abstract contract ERC721 {
         // Counter overflow is incredibly unrealistic.
         unchecked {
             balanceOf[to]++;
-            currentId++;
         }
 
         ownerOf[id] = to;
